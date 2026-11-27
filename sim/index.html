@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Garment Line 3D Sim – Kaarkhana-Meta test rig</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" class="hidden">
+  <div class="rec"><span class="dot"></span> REC <b id="clock">00:00</b></div>
+  <div>OUTPUT <b id="out">0</b> pcs</div>
+</div>
+
+<div id="start" class="overlay">
+  <h1>Garment Line 3D Sim</h1>
+  <p>Polo sewing line · 10 operators · unidirectional layout</p>
+  <button id="play">▶ PLAY</button>
+  <small>Enter / Space = play · ESC = stop · H = hide HUD · 1 / 2 / 3 = speed</small>
+</div>
+
+<div id="stop" class="overlay hidden">
+  <h1>■ STOP RECORDING</h1>
+  <p>Simulation ended.</p>
+  <small>Press R to restart</small>
+</div>
+
+<script src="js/three.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

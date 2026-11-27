@@ -1,0 +1,38 @@
+[
+ {
+  "constraint_correct": true,
+  "found": "ST5",
+  "truth": "ST5",
+  "confidence": "high",
+  "pearson_r": 0.9703629557885095,
+  "spearman": 0.8666666666666665,
+  "ratio_measured": 2.31,
+  "ratio_truth": 2.15,
+  "global_offset": 1.2558370696136203,
+  "mape_after_global_offset": 0.08481178109032109,
+  "worst_station_err": 0.20407424173834324,
+  "n_visits": 169,
+  "span_s": 340.28333496571986,
+  "recommended": "Add 1 operator",
+  "note": "Absolute times read ~1.1-1.3x high (hand-off included in a visit); relative structure is what is validated.",
+  "name": "Full 340 s, 1080p"
+ },
+ {
+  "constraint_correct": true,
+  "found": "ST5",
+  "truth": "ST5",
+  "confidence": "high",
+  "pearson_r": 0.9570783044669076,
+  "spearman": 0.14285714285714288,
+  "ratio_measured": 2.269662921348315,
+  "ratio_truth": 2.15,
+  "global_offset": 1.129653401797172,
+  "mape_after_global_offset": 0.09354539047985133,
+  "worst_station_err": 0.23450413223140498,
+  "n_visits": 32,
+  "span_s": 150.0,
+  "recommended": "Add 1 operator",
+  "note": "Absolute times read ~1.1-1.3x high (hand-off included in a visit); relative structure is what is validated.",
+  "name": "150 s clip, 960 px (sample)"
+ }
+]

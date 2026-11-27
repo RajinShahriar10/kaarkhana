@@ -1,0 +1,90 @@
+{
+  "name": "GarmentLine3D-Sim 10-station polo line",
+  "style": "Polo shirt (basic, short sleeve)",
+  "pitch_m": 3.0,
+  "time_scale": 10.0,
+  "allowance": 0.15,
+  "stations": [
+    {
+      "id": "ST1",
+      "name": "Shoulder Join",
+      "machine": "4-Thread Overlock",
+      "basic_smv_min": 0.7,
+      "std_smv_min": 0.805,
+      "operators": 1
+    },
+    {
+      "id": "ST2",
+      "name": "Collar Attach",
+      "machine": "SNLS (Lockstitch)",
+      "basic_smv_min": 0.7333,
+      "std_smv_min": 0.8433,
+      "operators": 1
+    },
+    {
+      "id": "ST3",
+      "name": "Placket Make",
+      "machine": "SNLS (Lockstitch)",
+      "basic_smv_min": 0.6667,
+      "std_smv_min": 0.7667,
+      "operators": 1
+    },
+    {
+      "id": "ST4",
+      "name": "Placket Attach",
+      "machine": "SNLS (Lockstitch)",
+      "basic_smv_min": 0.7167,
+      "std_smv_min": 0.8242,
+      "operators": 1
+    },
+    {
+      "id": "ST5",
+      "name": "Sleeve Attach",
+      "machine": "4-Thread Overlock",
+      "basic_smv_min": 1.4333,
+      "std_smv_min": 1.6483,
+      "operators": 1
+    },
+    {
+      "id": "ST6",
+      "name": "Side Seam",
+      "machine": "4-Thread Overlock",
+      "basic_smv_min": 0.6833,
+      "std_smv_min": 0.7858,
+      "operators": 1
+    },
+    {
+      "id": "ST7",
+      "name": "Sleeve Hem",
+      "machine": "Cover-stitch / Flatlock",
+      "basic_smv_min": 0.6333,
+      "std_smv_min": 0.7283,
+      "operators": 1
+    },
+    {
+      "id": "ST8",
+      "name": "Bottom Hem",
+      "machine": "Cover-stitch / Flatlock",
+      "basic_smv_min": 0.65,
+      "std_smv_min": 0.7475,
+      "operators": 1
+    },
+    {
+      "id": "ST9",
+      "name": "Buttonhole & Button",
+      "machine": "Buttonhole + Button machine",
+      "basic_smv_min": 0.6167,
+      "std_smv_min": 0.7092,
+      "operators": 1
+    },
+    {
+      "id": "ST10",
+      "name": "Bartack & QC",
+      "machine": "Bartack + QC table",
+      "basic_smv_min": 0.6,
+      "std_smv_min": 0.69,
+      "operators": 1
+    }
+  ],
+  "costing": {}
+}

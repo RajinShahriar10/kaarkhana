@@ -1,0 +1,15 @@
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+opencv-python-headless>=4.9
+matplotlib>=3.8
+reportlab>=4.0,<5        # 5.x pulls pillow>=13; 4.x keeps the optional local embedder working
+pillow>=9,<13
+openpyxl>=3.1            # optional: only for inspecting the bundled SMV spreadsheet
+streamlit>=1.35
+pytest>=8.0
+# --- optional, only for the SAM 3 detector / local LLM (free on Colab GPU) ---
+# torch
+# transformers>=4.57
+# pillow
+# accelerate

@@ -1,0 +1,309 @@
+{
+  "line": "GarmentLine3D-Sim 10-station polo line",
+  "detector": "classical",
+  "span_s": 340.28333496571986,
+  "constraint": {
+    "id": "ST5",
+    "name": "Sleeve Attach",
+    "confidence": "high",
+    "ratio_vs_rest": 2.31,
+    "evidence": [
+      {
+        "label": "Longest cycle per operator",
+        "ok": true,
+        "detail": "11.5s vs 5.0s median of the rest (2.3x), next slowest ST3 6.2s"
+      },
+      {
+        "label": "Downstream starvation right after it",
+        "ok": true,
+        "detail": "busy 56% -> 16% across ST5->ST6"
+      },
+      {
+        "label": "Largest WIP queue in front (excl. cut stock)",
+        "ok": true,
+        "detail": "ST5 peak 3.7 bundle-equiv; ST5 peak 3.7"
+      }
+    ]
+  },
+  "stations": [
+    {
+      "id": "ST1",
+      "name": "Shoulder Join",
+      "operators": 1,
+      "visits": 30,
+      "cycle_med_s": 5.549728207639589,
+      "cycle_mean_s": 6.203029546196562,
+      "cycle_p90_s": 9.309544074436861,
+      "busy_frac": 0.5836027034969167,
+      "queue_mean": 3.245051039805347,
+      "queue_p90": 4.759218386105651,
+      "queue_trend_per_min": 0.24073065115634135,
+      "cycle_per_op_s": 5.549728207639589
+    },
+    {
+      "id": "ST2",
+      "name": "Collar Attach",
+      "operators": 1,
+      "visits": 28,
+      "cycle_med_s": 5.7997159647404715,
+      "cycle_mean_s": 6.038989960822745,
+      "cycle_p90_s": 7.729621449559284,
+      "busy_frac": 0.49691448721716314,
+      "queue_mean": 1.0971993173296894,
+      "queue_p90": 2.1236434704114457,
+      "queue_trend_per_min": 0.05668484897994641,
+      "cycle_per_op_s": 5.7997159647404715
+    },
+    {
+      "id": "ST3",
+      "name": "Placket Make",
+      "operators": 1,
+      "visits": 25,
+      "cycle_med_s": 6.199696376101883,
+      "cycle_mean_s": 6.119700293829601,
+      "cycle_p90_s": 7.499632713026472,
+      "busy_frac": 0.45753746694093617,
+      "queue_mean": 0.9515037550661544,
+      "queue_p90": 1.8422008655565965,
+      "queue_trend_per_min": -0.006221443122589334,
+      "cycle_per_op_s": 6.199696376101883
+    },
+    {
+      "id": "ST4",
+      "name": "Placket Attach",
+      "operators": 1,
+      "visits": 23,
+      "cycle_med_s": 5.999706170421177,
+      "cycle_mean_s": 6.0823108205936425,
+      "cycle_p90_s": 7.559629774730683,
+      "busy_frac": 0.42433147223038653,
+      "queue_mean": 1.3850200335969673,
+      "queue_p90": 2.2730850479589186,
+      "queue_trend_per_min": -0.18193840467741337,
+      "cycle_per_op_s": 5.999706170421177
+    },
+    {
+      "id": "ST5",
+      "name": "Sleeve Attach",
+      "operators": 1,
+      "visits": 16,
+      "cycle_med_s": 11.549434378060766,
+      "cycle_mean_s": 11.868168768364391,
+      "cycle_p90_s": 14.999265426052943,
+      "busy_frac": 0.5580370261533961,
+      "queue_mean": 2.760503239503949,
+      "queue_p90": 3.717231002153368,
+      "queue_trend_per_min": -0.055356129499943986,
+      "cycle_per_op_s": 11.549434378060766
+    },
+    {
+      "id": "ST6",
+      "name": "Side Seam",
+      "operators": 1,
+      "visits": 10,
+      "cycle_med_s": 4.999755142017648,
+      "cycle_mean_s": 5.359737512242918,
+      "cycle_p90_s": 7.499632713026472,
+      "busy_frac": 0.15750808110490802,
+      "queue_mean": 0.2743307213003426,
+      "queue_p90": 0.42746446666897053,
+      "queue_trend_per_min": -0.001223289612334033,
+      "cycle_per_op_s": 4.999755142017648
+    },
+    {
+      "id": "ST7",
+      "name": "Sleeve Hem",
+      "operators": 1,
+      "visits": 12,
+      "cycle_med_s": 4.5497771792360595,
+      "cycle_mean_s": 4.733101534443374,
+      "cycle_p90_s": 6.429685112634695,
+      "busy_frac": 0.16691154863355923,
+      "queue_mean": 0.21578466554460207,
+      "queue_p90": 0.4343038981356741,
+      "queue_trend_per_min": 0.005185076712728045,
+      "cycle_per_op_s": 4.5497771792360595
+    },
+    {
+      "id": "ST8",
+      "name": "Bottom Hem",
+      "operators": 1,
+      "visits": 9,
+      "cycle_med_s": 4.899760039177295,
+      "cycle_mean_s": 5.277519316574184,
+      "cycle_p90_s": 6.879663075416284,
+      "busy_frac": 0.1395827211284166,
+      "queue_mean": 0.3995732892585578,
+      "queue_p90": 0.6805234309370011,
+      "queue_trend_per_min": -0.0007294986601883557,
+      "cycle_per_op_s": 4.899760039177295
+    },
+    {
+      "id": "ST9",
+      "name": "Buttonhole & Button",
+      "operators": 1,
+      "visits": 11,
+      "cycle_med_s": 4.199794319294824,
+      "cycle_mean_s": 5.236107203276664,
+      "cycle_p90_s": 8.999559255631766,
+      "busy_frac": 0.16926241551572205,
+      "queue_mean": 0.4413131098488337,
+      "queue_p90": 0.783114902937554,
+      "queue_trend_per_min": 0.015797410317674808,
+      "cycle_per_op_s": 4.199794319294824
+    },
+    {
+      "id": "ST10",
+      "name": "Bartack & QC",
+      "operators": 1,
+      "visits": 5,
+      "cycle_med_s": 3.6998188050930594,
+      "cycle_mean_s": 3.619822722820777,
+      "cycle_p90_s": 4.699769833496589,
+      "busy_frac": 0.05318836320893349,
+      "queue_mean": 0.5071416330990123,
+      "queue_p90": 0.8788669434714035,
+      "queue_trend_per_min": 0.012839214937014742,
+      "cycle_per_op_s": 3.6998188050930594
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Current line",
+      "operators": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bottleneck_min": 1.9249057296767944,
+      "capacity_hr": 31.170357631006915,
+      "efficiency": 0.4974025974025974,
+      "cost": {
+        "scenario": "Current line",
+        "output_hr": 31.170357631006915,
+        "output_hr_base": 31.170357631006915,
+        "extra_pcs_day": 0.0,
+        "value_day_bdt": 0.0,
+        "labour_day_bdt": 0.0,
+        "net_day_bdt": 0.0,
+        "net_year_bdt": 0.0,
+        "net_year_usd": 0.0,
+        "labour_per_pc_base": 32.081762161279904,
+        "labour_per_pc": 32.081762161279904
+      }
+    },
+    {
+      "name": "Rebalance, same headcount",
+      "operators": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bottleneck_min": 1.3474340107737564,
+      "capacity_hr": 44.52908233000987,
+      "efficiency": 0.7105751391465677,
+      "cost": {
+        "scenario": "Rebalance, same headcount",
+        "output_hr": 39.18559245040869,
+        "output_hr_base": 31.170357631006915,
+        "extra_pcs_day": 64.12187855521418,
+        "value_day_bdt": 7822.86918373613,
+        "labour_day_bdt": 0.0,
+        "net_day_bdt": 7822.86918373613,
+        "net_year_bdt": 2346860.755120839,
+        "net_year_usd": 19236.563566564255,
+        "labour_per_pc_base": 32.081762161279904,
+        "labour_per_pc": 25.519583537381745
+      }
+    },
+    {
+      "name": "Add 1 operator",
+      "operators": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bottleneck_min": 1.033282729350314,
+      "capacity_hr": 58.06735978034352,
+      "efficiency": 0.8423753665689149,
+      "cost": {
+        "scenario": "Add 1 operator",
+        "output_hr": 47.308558920608874,
+        "output_hr_base": 31.170357631006915,
+        "extra_pcs_day": 129.1056103168157,
+        "value_day_bdt": 15750.884458651515,
+        "labour_day_bdt": 800.0,
+        "net_day_bdt": 14950.884458651515,
+        "net_year_bdt": 4485265.337595454,
+        "net_year_usd": 36764.46998029061,
+        "labour_per_pc_base": 32.081762161279904,
+        "labour_per_pc": 23.251606582351645
+      }
+    },
+    {
+      "name": "Add 2 operators",
+      "operators": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bottleneck_min": 0.9999510284035296,
+      "capacity_hr": 60.00293843968831,
+      "efficiency": 0.7979166666666667,
+      "cost": {
+        "scenario": "Add 2 operators",
+        "output_hr": 48.46990611621575,
+        "output_hr_base": 31.170357631006915,
+        "extra_pcs_day": 138.39638788167068,
+        "value_day_bdt": 16884.35932156382,
+        "labour_day_bdt": 1600.0,
+        "net_day_bdt": 15284.359321563821,
+        "net_year_bdt": 4585307.796469146,
+        "net_year_usd": 37584.490134993,
+        "labour_per_pc_base": 32.081762161279904,
+        "labour_per_pc": 24.75762996368867
+      }
+    }
+  ],
+  "recommended": "Add 1 operator",
+  "story": {
+    "headline": "ST5 Sleeve Attach sets the pace of this line (confidence: high). Its bundles take 11.5 s per cycle in the footage, 2.3x the median of the other stations.",
+    "evidence": [
+      "Longest cycle per operator: yes - 11.5s vs 5.0s median of the rest (2.3x), next slowest ST3 6.2s",
+      "Downstream starvation right after it: yes - busy 56% -> 16% across ST5->ST6",
+      "Largest WIP queue in front (excl. cut stock): yes - ST5 peak 3.7 bundle-equiv; ST5 peak 3.7"
+    ],
+    "recon": "Against the factory's own SMV sheet, the line runs at 1.29x basic time on median. ST5 is observed at 115 s against 86 s basic on the sheet, consistent with the sheet's own slowest operation. No station deviates more than 25% from the line pace, so the SMV sheet and the footage agree.",
+    "prescription": "Recommended: Add 1 operator. Line capacity moves from 31.2 to 58.1 garments/hour (theoretical) and balance efficiency from 50% to 84%. At the stated costing inputs and a 60% realisation factor this is about 129 more garments per day and BDT 14,951 net per day (about USD 36,764 per year).",
+    "caveat": "Measured from 169 complete bundle visits over 340 s of footage. Visit time includes about a second of hand-off, so absolute times read slightly high; relative comparisons between stations are the reliable part. Savings assume the cutting table can supply the extra output and are only as good as the wage and price inputs.",
+    "engine": "rule-based (deterministic)"
+  }
+}
